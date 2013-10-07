@@ -1,0 +1,15 @@
+<div class="searchForm">
+  <%= form_tag(homes_search_path, method: "get") do %>
+    <fieldset>
+      <legend>Search</legend>
+
+      <%= label_tag :area, "ZIP Code" %>
+      <%= text_field_tag :area, params[:area] %>
+
+      <%= label_tag :max, "Maximum price" %>
+      <%= text_field_tag :max, params[:max] %>
+
+      <%= content_tag(:button, "Find My Next Home", type: 'submit') %>
+    </fieldset>
+  <% end %>
+</div>

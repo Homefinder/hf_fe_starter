@@ -1,0 +1,29 @@
+<article class="listing">
+
+  <header>
+    <%= content_tag(:h4, one_line_address(listing["address"])) %>
+
+    <h5>
+      Listed at <span><%= listing_price(listing) %></span>
+      &raquo;
+      Listed since <span><%= listing_date(listing["createDate"]) %></span>
+      &raquo;
+      Last updated <span><%= listing_date(listing["updateDate"]) %></span>
+    </h5>
+  </header>
+
+  <%= content_tag :p do %>
+    <%= listing_image listing %>
+    <%= listing_description(listing) %>
+  <% end %>
+
+  <%= offsite_links_markup(listing) %>
+
+  <%# DEBUG TOOL: uncomment to see all data returned %>
+  <%#= content_tag :dl do %>
+    <%#= listing.each_pair do |key, val| %>
+      <%#= content_tag :dt, key %>
+      <%#= content_tag :dd, val %>
+    <%# end %>
+  <%# end %>
+</article>

@@ -1,0 +1,7 @@
+<% content_for :sidebar do %>
+  <%= render 'form' %>
+<% end %>
+
+<h1>Search results</h1>
+
+<%= render partial: 'listings', object: @listings %>

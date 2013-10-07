@@ -1,0 +1,35 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>HomeFinder.com Starter Application</title>
+  <meta name="description" content="">
+
+  <%= stylesheet_link_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div id="container">
+    <%= content_tag(:p, flash[:error], class: 'flashError') if flash[:error] %>
+
+    <div id="main" role="main">
+      <%= yield %>
+    </div>
+
+    <%- if content_for? :sidebar -%>
+      <aside id="sidebar">
+        <%= content_for :sidebar %>
+      </aside>
+    <%- end -%>
+  </div>
+
+
+</body>
+</html>

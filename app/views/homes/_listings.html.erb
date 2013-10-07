@@ -1,0 +1,15 @@
+<div class="listings"> 
+  <%- if @no_results -%>
+
+    <h3>We're sorry</h3>
+
+    <p>Your search terms didn't turn up any homes. Care to try again?</p>
+
+  <%- else -%>
+
+    <h3>Displaying <%= @first_index %>-<%= @last_index %> of <%= @total %></h3>
+
+    <%= render partial: 'listing', collection: listings %>
+
+  <%- end %>
+</div>
