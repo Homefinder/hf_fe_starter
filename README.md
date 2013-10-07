@@ -4,7 +4,7 @@ Welcome
 This is the HomeFinder.com starter application.
 
 INSTALLATION INSTRUCTIONS
-=========================
+-------
 
 This is a Rails 3.2 app.  We have provided a Vagrant configuration to get you up and running
 quickly.  The only dependency to use the vagrant environment is to have Vagrant (http://www.vagrantup.com/)
