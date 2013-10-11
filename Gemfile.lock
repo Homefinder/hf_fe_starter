@@ -30,11 +30,19 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     builder (3.0.4)
+    chunky_png (1.2.8)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    compass-rails (1.0.3)
+      compass (>= 0.12.2, < 0.14)
     daemons (1.1.9)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    fssm (0.2.10)
     hike (1.2.3)
     httparty (0.11.0)
       multi_json (~> 1.0)
@@ -68,6 +76,7 @@ GEM
       activesupport (= 3.2.13)
       bundler (~> 1.0)
       railties (= 3.2.13)
+    rails-boilerplate (0.1.9)
     railties (3.2.13)
       actionpack (= 3.2.13)
       activesupport (= 3.2.13)
@@ -107,10 +116,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass-rails (~> 1.0.0.rc.2)
   httparty
   jquery-rails
   pg
   rails (= 3.2.13)
+  rails-boilerplate
   sass-rails (~> 3.2.3)
   sqlite3
   thin

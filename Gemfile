@@ -10,6 +10,10 @@ group :production do
   gem 'pg'
 end
 
+# View: HTML5 and SASS
+gem 'rails-boilerplate'
+gem 'compass-rails','~> 1.0.0.rc.2'
+
 # External HTTP apis
 gem 'httparty'
 
